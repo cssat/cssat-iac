@@ -42,40 +42,6 @@ resource "aws_iam_role" "cssat-aws-admin" {
 
 resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
   role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonRDSFullAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/IAMFullAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonRDSDataFullAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonECS_FullAccess"
-}
-
-resource "aws_iam_role_policy_attachment" "cssat-aws-admin" {
-  role       = aws_iam_role.cssat-aws-admin.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonVPCFullAccess"
+  count = length(var.user_names)
+  policy_arn = var.admin_policies[count.index]
 }
