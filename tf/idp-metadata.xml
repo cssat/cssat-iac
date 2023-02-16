@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="INC20180221T195121" Name="urn:washington.edu:idp-metadata"><ds:Signature>
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>Yj5J2Cv1nHdBfeVqy9R7uEkLg2UJjuDEsmphrCV8JDI=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+jn2sWChsdPNxLrxarYRtmxU1lIhMuGxLfyvV07MFIWydJZ8Q1D3HaxmG3nAji7xQLSbMto3vXjD8
+nC5HfkGC91697tnm4unu1drb9Eo6Itay68v/lQArMLtBnwHUX+p3wxjbsldyuDSiqqLEtwrkahfJ
+l779182XX6JA4qqW6P8HVsRHK68iKHB+/nKGCeoGc26fqYn0OBLxJ9k4Vrgk9QoHmq3MI63hzkiL
+5CqgTQnH1qUQu4pn0vPq8ecUDDYnzpNkzj0qou85VeIJK5iMdB4r4l5fJ8/JwFaNZI10TVYGs0+Z
+7nHgNhDon8V+0AVT6VEheg8Z5omWJsZ7cox+Qg==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+wf0bybrwvQd/1uZ/j/tz4RHGANCturnQ19KLZhNBZzW95Qg9htnLVqBI25zh3CfdG0LS45Bt01Nh
+QCJVNxiBphx4lUHuzJZ/1DIYiuCVk8y73xzmFZvu+rC+zp3ezZKbu0GJva/rFAMOJngonGl0C+yg
+9CWYZ2CkV+YCyJiudgVctMeBuAJz9iFXyW5tNqRR0jdsxhZ+H12SP4NUZSa3aAu1BTNu4fwRTji+
+deCtBhJc1CSZFzKgTeuPhGGFu7+nkPc/6e466QtgU4tFo16KIbJO7c/uC1z93L9SNSt/6kfvlRRT
+stvfr10YR9nC9W0hNex3KnSkF+6fgI/zTwf03Q==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIDuTCCAqGgAwIBAgIJAKJ/HGIkuxTwMA0GCSqGSIb3DQEBCwUAMHMxCzAJBgNVBAYTAlVTMQsw
+CQYDVQQIDAJXQTEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MSEwHwYDVQQKDBhVbml2ZXJzaXR5IG9m
+IFdhc2hpbmd0b24xHTAbBgNVBAMMFGlkcC51Lndhc2hpbmd0b24uZWR1MB4XDTIxMDMyOTIwNTg1
+MloXDTQxMDMyNDIwNTg1MlowczELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAldBMRUwEwYDVQQHDAxE
+ZWZhdWx0IENpdHkxITAfBgNVBAoMGFVuaXZlcnNpdHkgb2YgV2FzaGluZ3RvbjEdMBsGA1UEAwwU
+aWRwLnUud2FzaGluZ3Rvbi5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDB/RvJ
+uvC9B3/W5n+P+3PhEcYA0K26udDX0otmE0FnNb3lCD2G2ctWoEjbnOHcJ90bQtLjkG3TU2FAIlU3
+GIGmHHiVQe7Mln/UMhiK4JWTzLvfHOYVm+76sL7Ond7Nkpu7QYm9r+sUAw4meCicaXQL7KD0JZhn
+YKRX5gLImK52BVy0x4G4AnP2IVfJbm02pFHSN2zGFn4fXZI/g1RlJrdoC7UFM27h/BFOOL514K0G
+ElzUJJkXMqBN64+EYYW7v6eQ9z/p7jrpC2BTi0WjXoohsk7tz+4LXP3cv1I1K3/qR++VFFOy29+v
+XRhH2cL1bSE17HcqdKQX7p+Aj/NPB/TdAgMBAAGjUDBOMB0GA1UdDgQWBBQ/mybHdlgo4MyQOCWR
+Nt268twZgDAfBgNVHSMEGDAWgBQ/mybHdlgo4MyQOCWRNt268twZgDAMBgNVHRMEBTADAQH/MA0G
+CSqGSIb3DQEBCwUAA4IBAQA0hM+G2sfyL6FHZNI0nTCIjVDiUvDnacpQgnpEvsS7l/6xQvuOwjeR
+xk66rpBMk+9T/Mk1AoNCqi4YP51JFHGYP+iuRosS6up+usX/tNgg5QhZwBaV+KXOxxVOuvGH5GnP
+LJmp7lMBBDsW9/LYMrLPX42LwDUOJ5rTF1PjnqdLEZVtXPYCJIiPrzkvQCY5YjcwHmZO4mw7F2Ha
+qT+w3bCf7UWlPPKWoBBqR7kfH2WN2PJw/FhHU6XbBU2n4/RwRTZ3NwtY75mahb1dz2zyMbavAHN2
+RQ8TBe5L97w84ZZaoCK7laQgFczmMucg1JxBtU7jifO/ew4b/9zQ7JyggkYm
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+<EntityDescriptor entityID="urn:mace:incommon:washington.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+      <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor errorURL="https://idp.u.washington.edu/error-incommon.html" protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">washington.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">University of Washington</mdui:DisplayName>
+        <mdui:Description xml:lang="en">The University of Washington IdP enables standards-based federation for the UW community.
+</mdui:Description>
+        <mdui:InformationURL xml:lang="en">https://wiki.cac.washington.edu/x/fiOD</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">http://www.washington.edu/online/privacy/</mdui:PrivacyStatementURL>
+        <mdui:Logo height="79" width="160" xml:lang="en">https://wiki.cac.washington.edu/download/attachments/69729985/uw-logo.png</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. a2:7f:1c:62:24:bb:14:f0, expires on Mar 24 20:58:52 2041 GMT -->
+          <ds:X509Certificate>
+MIIDuTCCAqGgAwIBAgIJAKJ/HGIkuxTwMA0GCSqGSIb3DQEBCwUAMHMxCzAJBgNV
+BAYTAlVTMQswCQYDVQQIDAJXQTEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MSEwHwYD
+VQQKDBhVbml2ZXJzaXR5IG9mIFdhc2hpbmd0b24xHTAbBgNVBAMMFGlkcC51Lndh
+c2hpbmd0b24uZWR1MB4XDTIxMDMyOTIwNTg1MloXDTQxMDMyNDIwNTg1MlowczEL
+MAkGA1UEBhMCVVMxCzAJBgNVBAgMAldBMRUwEwYDVQQHDAxEZWZhdWx0IENpdHkx
+ITAfBgNVBAoMGFVuaXZlcnNpdHkgb2YgV2FzaGluZ3RvbjEdMBsGA1UEAwwUaWRw
+LnUud2FzaGluZ3Rvbi5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDB/RvJuvC9B3/W5n+P+3PhEcYA0K26udDX0otmE0FnNb3lCD2G2ctWoEjbnOHc
+J90bQtLjkG3TU2FAIlU3GIGmHHiVQe7Mln/UMhiK4JWTzLvfHOYVm+76sL7Ond7N
+kpu7QYm9r+sUAw4meCicaXQL7KD0JZhnYKRX5gLImK52BVy0x4G4AnP2IVfJbm02
+pFHSN2zGFn4fXZI/g1RlJrdoC7UFM27h/BFOOL514K0GElzUJJkXMqBN64+EYYW7
+v6eQ9z/p7jrpC2BTi0WjXoohsk7tz+4LXP3cv1I1K3/qR++VFFOy29+vXRhH2cL1
+bSE17HcqdKQX7p+Aj/NPB/TdAgMBAAGjUDBOMB0GA1UdDgQWBBQ/mybHdlgo4MyQ
+OCWRNt268twZgDAfBgNVHSMEGDAWgBQ/mybHdlgo4MyQOCWRNt268twZgDAMBgNV
+HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQA0hM+G2sfyL6FHZNI0nTCIjVDi
+UvDnacpQgnpEvsS7l/6xQvuOwjeRxk66rpBMk+9T/Mk1AoNCqi4YP51JFHGYP+iu
+RosS6up+usX/tNgg5QhZwBaV+KXOxxVOuvGH5GnPLJmp7lMBBDsW9/LYMrLPX42L
+wDUOJ5rTF1PjnqdLEZVtXPYCJIiPrzkvQCY5YjcwHmZO4mw7F2HaqT+w3bCf7UWl
+PPKWoBBqR7kfH2WN2PJw/FhHU6XbBU2n4/RwRTZ3NwtY75mahb1dz2zyMbavAHN2
+RQ8TBe5L97w84ZZaoCK7laQgFczmMucg1JxBtU7jifO/ew4b/9zQ7JyggkYm
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.u.washington.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.u.washington.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.u.washington.edu/idp/profile/SAML2/Redirect/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.u.washington.edu/idp/profile/SAML2/SOAP/ECP"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">University of Washington</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">University of Washington</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.washington.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>IAM Technical Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>IAM Administrative Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>IAM Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+</EntitiesDescriptor>

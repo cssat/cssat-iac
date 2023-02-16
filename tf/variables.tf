@@ -1,11 +1,15 @@
-# ./vms/variables.tf
-
-variable "bucket_id" {}
-
-variable "bucket_name" {
-    description = "the name to give the bucket"
+### Static Values DON'T TOUCH -------------------
+### ---------------------------------------------
+variable "app_name" {
+  type = string
 }
-variable "principals" {
-    default     = ""
-    description = "list of IAM user/role ARNs with access to the bucket"
+
+variable "region" {
+  type = string
 }
+
+variable "environment" {
+  type        = string
+  description = "dev, stg, prd"
+}
+### ---------------------------------------------
