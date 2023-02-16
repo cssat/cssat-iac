@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 set -o pipefail
-_LIVE_DIR=${LIVE_DIR:="live"}
+_TF_DIR=${TF_DIR:="tf"}
 _BACKEND_TPL=${BACKEND_TPL:="backend.tf.tpl"}
 _TERRAFORM_APPLY=${TERRAFORM_APPLY:="false"}
 
@@ -18,13 +18,13 @@ if [[ ! -d "$_BRANCH_NAME" ]]; then
     exit 1
 fi
 
-if [[ -d "$_LIVE_DIR" ]]; then
-    if [[ ! -f "${_LIVE_DIR}/${_BACKEND_TPL}" ]]; then
+if [[ -d "$_TF_DIR" ]]; then
+    if [[ ! -f "${_TF_DIR}/${_BACKEND_TPL}" ]]; then
         echo "[ERROR] The file backend.tf.tpl doesn't exist - $_BACKEND_TPL"
         exit 1
     fi
 else
-    echo "[ERROR] The supplied live directory doesn't exist - $_LIVE_DIR"
+    echo "[ERROR] The supplied tf directory doesn't exist - $_TF_DIR"
     exit 1
 fi
 
