@@ -20,7 +20,7 @@ jobs:
       AWS_REGION: ${{ secrets.AWS_REGION }}
       AWS_DEFAULT_REGION: ${{ secrets.AWS_REGION }}
       ### --------------------------------------------------
-      LIVE_DIR: live
+      TF_DIR: tf
       BACKEND_TPL: backend.tf.tpl
 
     steps:
@@ -39,13 +39,13 @@ jobs:
       - name: prepare-files-folders
         run: |
           [[ -n $GITHUB_BASE_REF_SLUG ]] && export BRANCH_NAME=$GITHUB_BASE_REF_SLUG
-          ./scripts/prepare-files-folders.sh
+          ./scripts/prep-files-and-folders.sh
       - name: prepare-backend
         run: |
           export AWS_ACCESS_KEY_ID=${{ secrets[env.AWS_ACCESS_KEY_ID_SECRET_NAME] }}
           export AWS_SECRET_ACCESS_KEY=${{ secrets[env.AWS_SECRET_ACCESS_KEY_SECRET_NAME] }} 
           [[ -n $GITHUB_BASE_REF_SLUG ]] && export BRANCH_NAME=$GITHUB_BASE_REF_SLUG       
-          ./scripts/prepare-backend.sh
+          ./scripts/prep-backend.sh
       - name: install-terraform
         uses: little-core-labs/install-terraform@v1
         with:
